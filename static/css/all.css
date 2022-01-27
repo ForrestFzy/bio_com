@@ -1,0 +1,33 @@
+#copyright {
+	background-color: #bab1bc;
+}
+
+#img-logo {
+	float: left;
+}
+
+.sf-menu ul {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.sf-menu li a {
+	color: #000000;
+}
+
+#header {
+	/* position: fixed; */
+}
+
+.logo {
+	width: 200px;
+	height: 50px;
+}
+
+.logo-left {
+	margin-left: 180px;
+}
+
+.blank {
+	padding-top: 50px;
+}
