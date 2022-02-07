@@ -1541,7 +1541,8 @@ Author:     Electronthemes
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px; }
+  margin-bottom: 40px;
+}
   .post-full-content > * {
     width: 100%;
     height: auto; }
@@ -1581,7 +1582,8 @@ Author:     Electronthemes
   .post-full-content h1 {
     font-size: 45px; }
   .post-full-content h2 {
-    font-size: 36px; }
+    font-size: 36px; 
+	text-align: center;}
   .post-full-content h3 {
     font-size: 30px; }
   .post-full-content h4 {

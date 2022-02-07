@@ -58,6 +58,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  background-image: url(../img/bg1.png);
   background-color: #fff; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6953,7 +6954,7 @@ button.bg-dark:focus {
   text-align: right !important; }
 
 .text-center {
-  text-align: center !important; }
+  text-align: left !important; }
 
 @media (min-width: 576px) {
   .text-sm-left {
@@ -7309,7 +7310,7 @@ img {
   text-transform: capitalize; }
 
 .text-center {
-  text-align: center; }
+  text-align: left; }
 
 .text-right {
   text-align: right; }
