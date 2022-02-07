@@ -8,21 +8,23 @@
 		<link rel="icon" href="assets/img/favicon.ico" type="image/gif" sizes="16x16">
 		<link rel="stylesheet" href="assets/css/base-style.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/all.css"/>
 		<script src="assets/js/dark-light.js"></script>
 	</head>
 	<body class="placeholder">
-		<div class="loader-wrapper">
+		<!-- <div class="loader-wrapper">
 			<div class="count"></div>
 			<div class="loader"></div>
 			<div class="loader2"></div>
-		</div>
+		</div> -->
 		<!-- header area start from here-->
 		<header class="header-area ">
 			<div class="container">
 				<div class="header-wrapper d-flex align-items-center justify-content-between">
 					<!--header-logo-->
 					<div class="header-logo">
-						<a href="index.html">团队名称</a>
+						<img id='img-logo' src="static/picture/title-logo.png" style="width: 60px;padding-right: 10px;">
+						<a href="index.html">合成生物学竞赛</a>
 					</div>
 					<!-- menu-bar -->
 					<div class="menu-bar">
@@ -42,10 +44,6 @@
 								<ul class="dropdown">
 									<li><a href="Parts.html">元件 Parts</a></li>
 									<li><a href="Collaboration.html">合作 Collaboration</a></li>
-									<li><a href="Demo.html">演示 Demo（可选）</a></li>
-									<li><a href="Hardware.html">硬件 Hardware（可选）</a></li>
-									<li><a href="Software.html">软件 Software（可选）</a></li>
-									<li><a href="Notebook.html">笔记 Notebook（可选）</a></li>
 								</ul>
 							</li>
 							<li><a href="Team.html">团队 Team</a></li>
@@ -57,7 +55,7 @@
 							<li class="popup"><img src="assets/img/svg/search.svg" alt=""></li>
 							<li class="dark-light"><img src="assets/img/svg/dark-light.svg" alt=""></li>
 							<li>
-								<!--移动菜单图标-->
+								
 								<div class="menu-toggole">
 									<span class="menu-show comon-tab">
 										<img src="assets/img/svg/toggle.svg" alt="">
@@ -82,51 +80,42 @@
 					<div class="data-list-wrapper">
 						<ul class="data-list">
 							<li>
-								<a href="">
+								<a href="Background.html">
 									<div class="search-content">
 										<div class="search-title">
-											<h4>文本1<span>2022.1.29</span></h4>
+											<h4>项目背景<span>2022.1.29</span></h4>
 										</div>
-										<p>文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1文本1
+										<p>在1993年，Frances等人研究发现，将TaqDNA聚合酶的5'→3'核酸外切酶活性的结构域切除，得到了蛋白大小为61kDa的stofell片段，发现得到的StofellTaqDNA聚合酶的耐热性明显得到了...
 										</p>
 									</div>
 									<img src="assets/img/svg/arrow-left.svg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="Design.html">
 									<div class="search-content">
 										<div class="search-title">
-											<h4>文本2<span>2022.1.29</span></h4>
+											<h4>项目设计<span>2022.1.29</span></h4>
 										</div>
-										<p>文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2文本2 </p>
+										<p>本研究将Taq DNA聚合酶与双链DNA结合蛋白CL7融合，纯化CL7-Taq酶，以期增强酶与模板结合的能力，优化其酶学性质。并设计CL7-Taq酶作用下的最优PCR反应体系，扩大其应用范围...
+										</p>
 									</div>
 									<img src="assets/img/svg/arrow-left.svg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="Protocol.html">
 									<div class="search-content">
 										<div class="search-title">
-											<h4>文本3<span>2022.1.29</span></h4>
+											<h4>项目方案<span>2022.1.29</span></h4>
 										</div>
-										<p>文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3文本3 </p>
+										<p>在金开瑞生物公司合成编码来源于Thermus aquaticus YT-1的Taq酶基因序列（GenBank:P19821.1）和来源于大肠杆菌CE7突变体CL7的基因序列(GenBank:CP018986.1)；...
+										</p>
 									</div>
 									<img src="assets/img/svg/arrow-left.svg" alt="">
 								</a>
 							</li>
-							<li>
-								<a href="">
-									<div class="search-content">
-										<div class="search-title">
-											<h4>文本4<span>2022.1.29</span></h4>
-										</div>
-										<p>文本4文本4 </p>
-									</div>
-									<img src="assets/img/svg/arrow-left.svg" alt="">
-								</a>
-							</li>
-	
+		
 						</ul>
 					</div>
 				</div>
@@ -140,9 +129,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 m-auto">
-						<div class="single-blog-banner-wrapper">
-							<h1>标题标题标题标题标题标题标题标题标题</h1>
-							<p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+						<div class="single-blog-banner-wrapper" style="padding-bottom: 0;">
+							<h1>项目元件</h1>
+							<!-- <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 -->
 							</p>
 							<div class="single-blog-social d-flex align-items-center justify-content-between">
 								<div class="published-dtls-area d-flex align-items-center">
@@ -153,7 +142,7 @@
 									<div class="published-person d-flex align-items-center">
 										<img class="icon-svg svg-orange mr-5" src="assets/img/svg/profile-user.svg"
 											alt="">
-										<p>作者</p>
+										<p>B409_G.O.A.T</p>
 									</div>
 								</div>
 							</div>
@@ -166,131 +155,77 @@
 		<!--single-blog content area start from here-->
 		<div class="single-blog-full-content">
 			<div class="container">
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-lg-10 m-auto">
 						<div class="post-thumb">
 							<img src="assets/img/single-blog/post-thum.jpg" alt="">
 							<a href="">图片配文字注释</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="row">
 					<div class="col-lg-8 m-auto">
 						<div class="post-full-content">
-							<p class="title-content">
+							<!-- <p class="title-content">
 								总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段总起第一段
 							</p>
 							<p>总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段总起第二段
+							</p> -->
+							<h2>BASIC PARTS</h2>
+							<h4>BASIC PART 1: Taq-6His</h4>
+							<p>Short description:YT-1 Taq with 6-His tag
+								<br>Schematic diagrams (design):
 							</p>
-							<h2>小标题1</h2>
-							<p>正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段正文第一节第一段
+							<img src="assets/img/Bio_img/parts1.png" >
+							<p>Long description:我们选择源于Thermus aquaticus YT-1的Taq酶基因序列（GenBank∶P19821.1）作为研究目的基因。通过设计用来扩增两段基因序列的引物，引物在Taq基因两端的序列与载体的序列同源，并在 Taq DNA聚合酶的C端加 His 标签（CATCACCATCACCATCAC）用于亲和纯化，在其N段的引物添加TEV标签作为linker为融合蛋白做准备。便于后续的变量实验，并从合成质粒上将Taq（2539 bp）全长基因扩增出来。</p>
+							
+							<h4>BASIC PART 2: CL7-TEV</h4>
+							<p>
+								Short description:CL7 with TEV<br />
+								Schematic diagrams (design):
 							</p>
-							<p>正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段正文第一节第二段
-							</p>
-							<h2>小标题2</h2>
-							<p>正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段正文第二节第一段
-							</p>
-							<p>正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段正文第二节第二段</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 m-auto">
-						<div class="row">
-							<div class="col-md-6 mb-md-30">
-								<div class="single-post-thumb">
-									<img src="assets/img/single-blog/blog-thum1.jpg" alt="">
-								</div>
+							<img src="assets/img/Bio_img/parts2.png" >
+							<p>Long description:在数据库找寻源于大肠杆菌CE7突变体CL7的基因序列（GenBank∶CP018986.1)。在其C段的引物添加TEV标签作为linker为融合蛋白做准备。便于后续的变量实验，并从合成质粒上将CL7复合体（411 bp）全长基因扩增出来。</p>
+							
+							<h2>COMPOSITE PART</h2>
+							<h4>PART:pET-30a-CL7-Taq</h4>
+							<p>Schematic diagrams (design):</p>
+							<img src="assets/img/Bio_img/parts3.png" style="width: 80%;" >
+							<p>Long description：在获得Taq-6His和 CL7-TEV元件后，我们选择了 pET30a作为载体。在扩增 Taq DNA 聚合酶的基因时，用引物在酶的 C 端加上 6His 纯化标签，先用 T5 介导的克隆方法，分别将 Taq 和 CL7-Taq 基因克隆到带有卡那抗性基因的 pET30a 载体上，预期质粒大小分别为 8.0 kb 和 8.4 kb 左右。</p>
+							<img src="assets/img/Bio_img/parts4.png" >
+							<img src="assets/img/Bio_img/parts5.png" >
+							<img src="assets/img/Bio_img/parts6.png" >
+							<p>用SalⅠ限制性内切酶处理，分别回收酶切后的载体与 Taq基因片段，利用T5核酸酶介导的克隆方法来构建pET-30a-Taq表达质粒。同样的方法构建最终构建出 pET-30a-CL7-Taq表达质粒。</p>
+							
+							<h4>实验流程图：</h4>
+							<img src="assets/img/Bio_img/parts7.png" style="width: 50%;">
+							
+							<h4>RESULT:</h4>
+							<p>纯化图：</p>
+							<img src="assets/img/Bio_img/parts8.png" style="width: 70%;">
+							
 							</div>
-							<div class="col-md-6 mb-md-30">
-								<div class="single-post-thumb">
-									<img src="assets/img/single-blog/blog-thum2.jpg" alt="">
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-8 m-auto">
-						<blockquote class="blockquote">
-							<img src="assets/img/svg/cotation.svg" alt="">
-							正文格式2正文格式2正文格式2正文格式2正文格式2正文格式2正文格式2
-						</blockquote>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8 m-auto pt-50 pb-100 pb-md-50">
-						<p>正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3正文格式3</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 m-auto">
-						<div class="profile-area">
-							<div class="profile-img">
-								<img src="assets/img/single-blog/profile-img.jpg" alt="">
-							</div>
-							<div class="blog-profile-content">
-								<h3>总结</h3>
-								<p>总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案总结文案</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
-		<!--subcribe section start here-->
-		<section class="subscribe-area ">
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-md-10 m-auto">
-		                <div class="row align-items-center">
-		                    <div class="col-md-10 m-auto">
-		                        <div class="suscribe-wrapper">
-		                            <div class="section-heading text-center">
-		                                <h2>订阅</h2>
-		                                <p>总是获得最新的更新</p>
-		                            </div>
-		                            <div class="subscribe-input">
-		                                <input type="email" placeholder="enter your email">
-		                                <button class="btn">Subscribe</button>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</section>
-		<footer class="footer-area">
-			<div class="footer-top-area">
-				<div class="container">
-					<div class="footer-top-wrapper d-flex justify-content-between">
-						<!-- menu-bar -->
-						<div align="center" class="contact-area">
-						    <h4>联系我们</h4>
-						    <div class="contact-address">
-						        <a href="#">邮箱：598666122@qq.com</a>
-								<a href="#">湖北大学：湖北省武汉市友谊大道368号</a>
-						    </div>
+		
+		<!-- 页脚的联系方式 -->
+		<footer>
+			<section id="copyright" class="dark_section">
+				<div class="foot_container">
+					<div class="row2">
+						<div class="msg">
+							<img id='img-logo' src="static/picture/logo_b.jpg" style="width: 100px;padding: 0;margin: 0;">
+							<p class="text-center">团队联系方式：1350068839@qq.com</p>
+							<p class="text-center">学校地址及信息：【湖北大学】湖北省武汉市友谊大道368号</p>
+							<!-- <br> -->
+							<p>Copyright © 2022 B409_G.O.A.T All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="footer-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<p>Copyright © 2022 团队名称 All Rights Reserved.</p>
-						</div>
-						<div class="col-lg-6">
-							<ul class="footer-privacy-card">
-								<li><a href="#">服务条款</a></li>
-								<li><a href="#">隐私政策</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+			</section>
 		</footer>
 		<!-- Jquery -->
 		<script src="assets/js/default-js/jquery-3.3.1.min.js"></script>
