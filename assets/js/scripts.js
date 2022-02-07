@@ -3,10 +3,10 @@
         preloader: () => {
             var count = 0;
             var counter = setInterval(function() {
-                if (count <= 101) {
+                if (count <= 0) {
                     $('.count').text(count + '%');
                     $('.loader, .loader2').css('width', count + '%');
-                    if (count == 100) {
+                    if (count == 0) {
                         $('body').removeClass('placeholder')
                         $('.loader-wrapper').addClass('hideen')
                     }
