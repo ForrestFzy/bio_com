@@ -14869,7 +14869,7 @@ button.swiper-pagination-bullet {
     opacity: 0.1; } }
 
 :root {
-  --title-font: 'Mulish', sans-serif;
+  --title-font: 'Mulish', SimHei;
   --text-bold: bold;
   --text-semibold: 600;
   --text-medium: 500;
