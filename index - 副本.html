@@ -9,14 +9,15 @@
 		<link rel="stylesheet" href="assets/css/base-style.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script src="assets/js/dark-light.js"></script>
-		<link rel="stylesheet" type="text/css" href="assets/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/all.css"/>
 	</head>
-	<body class="placeholder" style="margin: 0;width: 100%;background-image: none;">
+	<body class="placeholder">
 		<!-- <div class="loader-wrapper">
 			<div class="count"></div>
 			<div class="loader"></div>
 			<div class="loader2"></div>
 		</div> -->
+		<!-- header area start from here-->
 		<header class="header-area ">
 			<div class="container">
 				<div class="header-wrapper d-flex align-items-center justify-content-between">
@@ -54,7 +55,7 @@
 							<li class="popup"><img src="assets/img/svg/search.svg" alt=""></li>
 							<li class="dark-light"><img src="assets/img/svg/dark-light.svg" alt=""></li>
 							<li>
-
+								
 								<div class="menu-toggole">
 									<span class="menu-show comon-tab">
 										<img src="assets/img/svg/toggle.svg" alt="">
@@ -73,7 +74,8 @@
 				<div class="search-option">
 					<div class="search-box">
 						<img src="assets/img/svg/search.svg" alt="">
-						<input id="search" name="search" type="text" data-list=".data-list" placeholder="输入搜索内容...">
+						<input id="search" name="search" type="text" data-list=".data-list"
+							placeholder="输入搜索内容...">
 					</div>
 					<div class="data-list-wrapper">
 						<ul class="data-list">
@@ -95,8 +97,7 @@
 										<div class="search-title">
 											<h4>项目设计<span>2022.2.8</span></h4>
 										</div>
-										<p>本研究将Taq
-											DNA聚合酶与双链DNA结合蛋白CL7融合，纯化CL7-Taq酶，以期增强酶与模板结合的能力，优化其酶学性质。并设计CL7-Taq酶作用下的最优PCR反应体系，扩大其应用范围...
+										<p>本研究将Taq DNA聚合酶与双链DNA结合蛋白CL7融合，纯化CL7-Taq酶，以期增强酶与模板结合的能力，优化其酶学性质。并设计CL7-Taq酶作用下的最优PCR反应体系，扩大其应用范围...
 										</p>
 									</div>
 									<img src="assets/img/svg/arrow-left.svg" alt="">
@@ -108,8 +109,7 @@
 										<div class="search-title">
 											<h4>项目方案<span>2022.2.8</span></h4>
 										</div>
-										<p>在金开瑞生物公司合成编码来源于Thermus aquaticus
-											YT-1的Taq酶基因序列（GenBank:P19821.1）和来源于大肠杆菌CE7突变体CL7的基因序列(GenBank:CP018986.1)；...
+										<p>在金开瑞生物公司合成编码来源于Thermus aquaticus YT-1的Taq酶基因序列（GenBank:P19821.1）和来源于大肠杆菌CE7突变体CL7的基因序列(GenBank:CP018986.1)；...
 										</p>
 									</div>
 									<img src="assets/img/svg/arrow-left.svg" alt="">
@@ -136,71 +136,154 @@
 				</div>
 			</div>
 		</header>
-		</div>
-		</div>
-		<div class="popup-close-icon">
-			<img src="assets/img/svg/close-icon.svg" alt="">
-		</div>
-		</div>
-		</header>
-
-		<div class="bg_content" 
-			style="background-image: url(./static/picture/main.png);
-					width: 100%;
-					background-size: 100%;
-					position: fixed;
-					z-index: -999;
-					height: 100%;">
-			
-		</div>
-
-		<div id="getthecoin">
+		<!-- 轮播图区从这开始 -->
+		<section class="banner-area">
 			<div class="container">
-				<div class="chevron"></div>
-				<div class="chevron"></div>
-				<div class="chevron"></div>
-				<span class="text">Scroll down</span>
-			</div>
-		</div>
-		<div class="single-blog-full-content">
-			<div class="container">
-				<div class="index_content">
-					
-					<h2>摘要</h2>
-					<p>PCR技术，又称聚合酶链式反应，是一项利用DNA双链复制的原理，在生物体外复制特定DNA片段的核酸合成技术。通过这项技术，可在短时间内大量扩增目的基因。PCR技术广泛用于基因分型、DNA 测序以及蛋白质定向进化等生命科学的各个领域。Taq聚合酶是生物技术中重要的工具酶，广泛应用于实时荧光定量 PCR(RT-PCR)、DNA测序等，但由于其在酶学性质上有一定的缺陷，3'→5'的外切酶校正功能的缺失，使得 Taq DNA 聚合酶在 PCR 扩增中的错配率较高。</p>
-					
-					<img src="assets/img/Bio_img/index1.png" style="width: 40%;">
-					
-					<p>为了满足现代体外诊断方法和分子克隆技术对TaqDNA聚合酶模板敏感度和扩增速率等性能的需求。本研究将CL7双链 DNA 结合蛋白与TaqDNA聚合酶进行融合表达，以改善其酶学性质。另外，本研究将PCR扩增动力学模型用于估算体系的反应速度，产物数量和模板用量等，指导反应的进行，为PCR后产物继续处理提供较为准确的信息。</p>
-					
-					<img src="assets/img/Bio_img/index2.png" style="width: 40%;">
-					
-					<p>通过实验研究发现：重组CL7-Taq DNA聚合酶的热稳定性、扩增速率、模板敏感度以及对抑制剂的耐受性等酶学性质均有显著增强，其中扩增速率提高近一倍。这些性质的改变使得CL7-TaqDNA聚合酶在分子生物学领域以及疾诊断与治疗等医学诊断领域中具有广阔的应用前景，同时为TaqDNA聚合酶的改造提供了一种新的思路。</p>
-					
-					<h3>参考文献：</h3>
-					
-					<p>
-						[1]	每日生物评论http://www.bio-review.com/pcr-technology/<br>
-						[2]无缝克隆-让载体构建如此简单 http://www.ws-bio.com/newsshow/109.html
-					</p>
-					
+				<div class="banner-owl-area owl-carousel" data-carousel-loop="true" data-carousel-autoplay="false"
+					data-carousel-mousedrag="true" data-carousel-items="1" data-carousel-nav="false">
+					<div class="banner-single-wrapper">
+						<div class="banner-img-area">
+							<!-- <h4>文本21</h4> -->
+							<div class="banner-img">
+								<img src="assets/img/homepage/001.jpg" alt="">
+							</div>
+						</div>
+						<div class="banner-content-area">
+							<h5>Team</h5>
+							<h1><a href="Team.html">团队介绍</a></h1>
+							<h4 class="date"><span>2022.2.8</span> -B409_G.O.A.T</h4>
+							<!-- <p>文本24文本24</p> -->
+							<a href="Team.html"><button class="btn btn-sm btn-radious-6 btn-black">查看更多</button></a>
+						</div>
+					</div>
+					<div class="banner-single-wrapper">
+						<div class="banner-img-area">
+							<!-- <h4>文本31</h4> -->
+							<div class="banner-img">
+								<img src="assets/img/homepage/002.jpg" alt="">
+							</div>
+						</div>
+						<div class="banner-content-area">
+							<h5>Collaboration</h5>
+							<h1><a href="Collaboration.html">团队合作</a></h1>
+							<h4 class="date"><span>2022.2.8</span> -B409_G.O.A.T</h4>
+							<!-- <p>文本34文本34</p> -->
+							<a href="Collaboration.html"><button class="btn btn-sm btn-radious-6 btn-black">查看更多</button></a>
+						</div>
+					</div>
+					<div class="banner-single-wrapper">
+						<div class="banner-img-area">
+							<!-- <h4>文本41</h4> -->
+							<div class="banner-img">
+								<img src="assets/img/homepage/003.jpg" alt="">
+							</div>
+						</div>
+						<div class="banner-content-area">
+							<h5>Conclusion</h5>
+							<h1><a href="Conclusion.html">实验结论</a></h1>
+							<h4 class="date"><span>2022.2.8</span> -B409_G.O.A.T</h4>
+							<!-- <p>文本44文本44</p> -->
+							<a href="Conclusion.html"><button class="btn btn-sm btn-radious-6 btn-black">查看更多</button></a>
+						</div>
+					</div>
 				</div>
 			</div>
-
+		</section>
+		<div class="spc-card-area">
+			<div class="container">
+				<div class="spc-single-card-wrapper">
+					<div class="spc-sc-img">
+						<a href="Background.html"><img src="assets/img/single-post/post1.jpg" alt=""></a>
+					</div>
+					<div class="spc-sc-content-wrapper">
+						<div class="spc-scc-date">
+							<h4>01<span>ONE</span></h4>
+						</div>
+						<div class="spc-scc-content">
+							<h5>Background</h5>
+							<h3><a href="Background.html">项目背景</a></h3>
+							<p>在1993年，Frances等人研究发现，将TaqDNA聚合酶的5'→3'核酸外切酶活性的结构域切除，得到了蛋白大小为...</p>
+						</div>
+					</div>
+				</div>
+				<div class="spc-single-card-wrapper">
+					<div class="spc-sc-img">
+						<a href="Design.html"><img src="assets/img/single-post/post2.jpg" alt=""></a>
+					</div>
+					<div class="spc-sc-content-wrapper">
+						<div class="spc-scc-date">
+							<h4>02<span>TWO</span></h4>
+						</div>
+						<div class="spc-scc-content">
+							<h5>Design</h5>
+							<h3><a href="Design.html">项目设计</a></h3>
+							<p>本研究将Taq DNA聚合酶与双链DNA结合蛋白CL7融合，纯化CL7-Taq酶，以期增强酶与模板结合的能力，优化其...</p>
+						</div>
+					</div>
+				</div>
+				<div class="spc-single-card-wrapper">
+					<div class="spc-sc-img">
+						<a href="Protocol.html"><img src="assets/img/single-post/post3.jpg" alt=""></a>
+					</div>
+					<div class="spc-sc-content-wrapper">
+						<div class="spc-scc-date">
+							<h4>03<span>THREE</span></h4>
+						</div>
+						<div class="spc-scc-content">
+							<h5>Protocol</h5>
+							<h3><a href="Protocol.html">项目方案</a></h3>
+							<p>一.构建CL-7 Taq酶表达质粒和Taq酶表达质粒；二、T5核酸酶介导的体外重组；三、CL7-Taq 蛋白质的表达...</p>
+						</div>
+					</div>
+				</div>
+				<div class="spc-single-card-wrapper">
+					<div class="spc-sc-img">
+						<a href="Result.html"><img src="assets/img/single-post/post4.jpg" alt=""></a>
+					</div>
+					<div class="spc-sc-content-wrapper">
+						<div class="spc-scc-date">
+							<h4>04<span>FOUR</span></h4>
+						</div>
+						<div class="spc-scc-content">
+							<h5>Result</h5>
+							<h3><a href="Result.html">项目结果</a></h3>
+							<p>分别将Taq和CL7-Taq的表达载体转化到大肠杆菌BL21感受态细胞中，用IPTG诱导蛋白质表达后，利用Ni柱亲和纯化的方法得到条带单一的蛋白，纯化结果如下...</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-
-
-
-
-		<footer >
+		<!--subcribe section start here-->
+		<!-- <section class="subscribe-area " style="padding-bottom: 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 m-auto">
+						<div class="row align-items-center">
+							<div class="col-md-10 m-auto">
+								<div class="suscribe-wrapper">
+									<div class="section-heading text-center">
+										<h2>联系我们</h2>
+										<img src="assets/img/single-post/post3.jpg" alt="">
+										<p>如果对本网站内容存在任何问题，亦或是学术合作，请您联系：</p>
+										<p>【X先生】邮箱：598666122@qq.com</p>
+										<p>【Y女士】邮箱：598666122@qq.com</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		
+		<footer>
 			<section id="copyright" class="dark_section">
 				<div class="foot_container">
 					<div class="row2">
-						<div class="msg" >
+						<div class="msg">
 							<div style="float: left;width: 50%;">
-								<img id='img-logo' src="static/picture/logo_b.jpg"
-									style="width: 100px;padding: 0;margin: 0;">
+								<img id='img-logo' src="static/picture/logo_b.jpg" style="width: 100px;padding: 0;margin: 0;">
 								<h3>联系</h3>
 								<p class="text-center">团队联系方式：1350068839@qq.com</p>
 								<p class="text-center">学校地址及信息：【湖北大学】湖北省武汉市友谊大道368号</p>
@@ -209,11 +292,11 @@
 							</div>
 							<div style="width: 50%;float: right;">
 								<h3>合作</h3>
-								<p>合作企业：北京擎科生物科技有限公司</p>
+								<p >合作企业：北京擎科生物科技有限公司</p>
 								<p>合作内容：快速高保真DNA聚合酶的研究，擎科协助进行DNA聚合酶保真性的测试</p>
 								<p>合作企业：武汉海吉力生物科技有限公司</p>
 								<p>合作内容：可用于分子诊断的DNA聚合酶的开发，海吉力协助进行临床样品检测</p>
-
+								
 							</div>
 						</div>
 					</div>
