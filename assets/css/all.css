@@ -57,6 +57,11 @@ footer {
 .part_content p {
 	text-align: left;
 }
+.part_content span{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+}
 
 
 .main_page {

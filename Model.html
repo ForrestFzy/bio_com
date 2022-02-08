@@ -9,7 +9,21 @@
 		<link rel="stylesheet" href="assets/css/base-style.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/all.css" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 		<script src="assets/js/dark-light.js"></script>
+		<script>
+		MathJax = {
+		  tex: {
+		    inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+		</script>
+		<script id="MathJax-script" async
+		  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
 	</head>
 	<body class="placeholder">
 		<!-- <div class="loader-wrapper">
@@ -182,28 +196,63 @@
 								<h2>PCR扩增效率模型/PCR扩增动力学方程</h2>
 								<h4>一、问题提出</h4>
 								<p class="title-content">在实验室中，PCR反应的确立往往依靠于经验或多次试验摸索，另一方面，由于PCR反应过程较为复杂，影响因素较多，存在非技术操作，非反应系统导致实验失败的情况，有众多不确定性。基于此，我们提出PCR扩增动力学模型，以此来估算体系的反应速度，产物数量和模板用量等，指导反应的进行。</p>
-								<IMG SRC=$(URLFileName) HEIGHT=$(Height_PX) WIDTH=$(Width_PX)>
-								
+						
 								<h4>二、理论依据</h4>
 								<p>DNA的半保留复制是PCR反应动力学的基本依据。PCR反应具有酶促反应动力学的一般特征，即由酶催化反应。[1]但又与其存在差异，表现为其产物可以作为下一轮反应的底物参与反应。</p>
 								<p>PCR反应的特点主要是模板变性、引物结合、引物延伸三个步骤反复循环。每经过一个循环，模板数会增加1倍或者接近1倍。在每一个循环中，一条双链模板可变性分离为两条单链，经过Taq酶延伸结合在模板上的引物产生两条双链，这是PCR反应基本的数量关系。</p>
 								
 								<h4>三、模型推导</h4>
 								<p>在最初的有限次循环内，中模板的数量可用公式（1）表示：</p>
+								<span>
+									$ Namp=Ntarg \times (1+p)^n  $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
+								</span>
 								<div style="text-align: center;">Ntarg-初始模板数量，P-系统的平均扩增效率，n-循环次数。</div>
-								<p>由于PCR是酶促反应，其具有酶促反应动力学的特点。经查阅资料显示，提供的Taq酶的分子质量为94 000Dar、最纯的酶为每毫克蛋白200，000单位［2］，从而计算出1U Taq酶应具有3.2×1010个酶分子。这一规律可用公式（2）表示：</p>
-								<p>Namp-系统中可利用的模板的数量，Cenz-酶分子常数3.2×1010，U-投入反应体系的酶单位。（n1模板数大于、等于体系酶分子数一半时的循环次数，n＜ n1时n1 ＝ n）</p>
+								<p style="margin-top:10px;">由于PCR是酶促反应，其具有酶促反应动力学的特点。经查阅资料显示，提供的Taq酶的分子质量为94 000Dar、最纯的酶为每毫克蛋白200，000单位［2］，从而计算出1U Taq酶应具有$ 3.2 \times 10^{10} $个酶分子。这一规律可用公式（2）表示：</p>
+								<span>
+									$ Namp=Ntarg \times (1+p)^{n1}+0.5 \times Cenz \times U \times P \times (n-n_1)  $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)
+								</span>
+								
+								<p style="margin-top: 0px;">Namp-系统中可利用的模板的数量，Cenz-酶分子常数3.2×1010，U-投入反应体系的酶单位。（n1模板数大于、等于体系酶分子数一半时的循环次数，n＜ n1时n1 ＝ n）</p>
 								<p>由于酶在每一个循环中要经受变性条件的高温影响而使一些分子失活，因此增加有效酶分子系数项。由相关文献得，分析酶失活的规律，使用多模型优选的曲线拟合方法［3，4］可以得到，酶失活50％的数量时，时间与变性温度的关系为：</p>
+								<span>
+									$ T=e^{(a+b\times Temp)} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)
+								</span>
+								
 								<div style="text-align: center;">a、b-方程系数BPHTemp为变性温度。</div>
-								<p>可计算出在PCR反应过程中受高温影响酶失活的数量为：</p>
+								<p style="margin-top: 10px;">可计算出在PCR反应过程中受高温影响酶失活的数量为：</p>
+								<span>
+									$ 0.5\times (n\times time+Ptime)/e^{(a+b\times Temp)} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4)
+								</span>
 								<div style="text-align: center;">Time-循环中的变性时间，Ptime-预变性时间。</div>
-								<p>系统中具有活性的酶的数量为：</p>
-								<p>公式就可修改为：</p>
-								<p>求出n1表示了最后一次指数形式扩增的循环次数。而限定长度的扩增产物数量为：</p>
-								<p>根据反应速率的基本概念，可借用下式来描述PCR反应产物分子数目积累的速率。</p>
-								<p>扩增产物使用重量表示时，可用公式（10）表示：</p>
-								<p>至此，方程中包括了以下的变量（或因素）：</p>
-								<table style="border-top: 1px solid; border-bottom: 1px solid;">
+								<p style="margin-top: 10px;">系统中具有活性的酶的数量为：</p>
+								<span>
+									$ 1-0.5\times(n\times time+Ptime)/e^{(a+b\times Temp)}=Ceactiv $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5)
+								</span>
+								<p style="margin-top: 10px;">公式就可修改为：</p>
+								<span>
+									$ Namp=Ntarg\times (1+P)^{n1}+0.5\times Cenz\times U\times P\times Ceactiv\times(n-n_1) $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (6)
+								</span>
+								<span>
+									$ n_1 $ 可由 $ 2\times Ntarg\times (1+P)^n-Cenz\times U\times Ceactiv=0 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (7)
+								</span>
+								<p style="margin-top: 10px;">求出n1表示了最后一次指数形式扩增的循环次数。而限定长度的扩增产物数量为：</p>
+								<span>
+									$ Namp=Ntarg\times (1+P)^{n1}+0.5\times Cenz\times U\times P\times Ceactiv\times (n-n_1)-Ntarg\times(1+P\times n) $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (8)
+								</span>
+								<p style="margin-top: 10px;"> 根据反应速率的基本概念，可借用下式来描述PCR反应产物分子数目积累的速率。</p>
+								<span>
+									$ Vrate=dNamp/dn=\begin{cases}
+									 Ntarg\times (1+P)^n\times ln(1+P)-P\times Ntarg &n\leq n_1 \\
+									 0.5\times Cenz\times U\times P\times{1-[Time\times (2n-n_1)+Ptime]/[2\times e^{(a+b\times temp)}]}-P\times Ntarg  &n_2\geq n>n_1
+									 \end{cases}
+									 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9)
+								</span>
+								<p style="margin-top: 10px;">扩增产物使用重量表示时，可用公式（10）表示：</p>
+								<span>
+									$ Wamp=[Ntarg\times (1+P)^{n1}+0.5\times Cenz\times U\times P\times Ceactiv\times (n-n_1)-Ntarg\times(1+P\times n)]\times Cu\times M $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10)
+								</span>
+								<p style="margin-top: 10px;">至此，方程中包括了以下的变量（或因素）：</p>
+								<table style="border-top: 1px solid; border-bottom: 1px solid;color: #000000;">
 									<tr><th>Ntarg</th><th>初始模板数量</th><th>Ptime</th><th>预变性时间</th></tr>
 									<tr><td>P</td><td>平均扩增效率</td><td>n</td><td>循环次数</td></tr>
 									<tr><td>N1</td><td>方式转换参数</td><td>Cenz</td><td>酶分子常数（3．2×1010）</td></tr>
@@ -212,7 +261,8 @@
 									<tr><td>Temp</td><td>变性温度</td><td>Cu</td><td>转换系数（1．66×10 －18）</td></tr>
 									<tr><td>Ceactiv</td><td colspan="3">酶活性系数1－0．5× （n× Time＋ Ptime）／e（a＋ b× Temp）</td></tr>
 								</table>
-								<div style="text-align: center;">（n2是极限循环次数，可由1－0.5×（n× Time＋ Ptime）／e（a＋ b× Temp）＝0计算）。</div>
+								
+								<div style="text-align: center;">（n2是极限循环次数，可由$ 1－0.5×(n×Time＋Ptime)/e^{(a＋b×Temp)}＝0 $计算）。</div>
 								
 								<h4>四、模型的分析检验</h4>
 								<h5 style="text-align: left;">1.动力学方程绘制的函数图像与PCR原理的比较</h5>
